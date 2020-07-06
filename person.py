@@ -1,4 +1,5 @@
 class Person:
+
     def __init__(self, city, address, phone_number):
         self._city = city
         self._address = address
@@ -30,3 +31,11 @@ class Person:
 
     def __str__(self):
         return f'Address: {self._address}\nCity: {self._city}\nPhone: {self._phone_number}'
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        print(f"Name of the person is {self.name} and age {self.age})
+
